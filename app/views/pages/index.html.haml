@@ -1,0 +1,18 @@
+.container-checksum
+  .wrap-checksum
+    = form_tag(calculate_path, method: :post, class: 'checksum-form validate-form', remote: true) do
+      %span.checksum-form-title
+        Try out the amazing checksum generator!
+      .wrap-input.validate-input{'data-validate' => 'Text is required'}
+        %span.label-input Text input
+        = text_area_tag 'text', nil, class: 'input', placeholder: 'Your text here...'
+        %span.focus-input  
+      .checksum-result
+        %span.result
+      .container-checksum-form-btn
+        .wrap-checksum-form-btn
+          .checksum-form-bgbtn
+          = button_tag(type: 'submit', class: 'checksum-form-btn') do
+            %span 
+              Generate 
+              = fa_icon "long-arrow-right", class: 'm-l-7'

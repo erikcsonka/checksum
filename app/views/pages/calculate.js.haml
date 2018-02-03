@@ -1,0 +1,6 @@
+- if @result.present? && @result != 'empty_error'
+  $('.validate-input').removeClass('alert-validate'); 
+  $('.checksum-result .result').text("Result: #{@result}")
+- else
+  $('.validate-input').addClass('alert-validate');
+  $('.checksum-result .result').text('');  
