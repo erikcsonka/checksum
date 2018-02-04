@@ -27,15 +27,15 @@ RSpec.describe PagesController, type: :controller do
   end
 end
 
-RSpec.describe "routing to pages", :type => :routing do
-  it "routes / to pages#index for home page" do
-    expect(:get => "/").to route_to(
-      :controller => "pages",
-      :action => "index"
+RSpec.describe 'routing to pages', :type => :routing do
+  it 'routes / to pages#index for home page' do
+    expect(:get => '/').to route_to(
+      :controller => 'pages',
+      :action => 'index'
     )
   end
 
-  it "does not expose a list of profiles" do
-    expect(:get => "/rules").not_to be_routable
+  it 'does not expose a list of profiles' do
+    expect(:get => '/rules').not_to be_routable
   end
 end
