@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml'
 #  Font-Awesome web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 gem 'font-awesome-rails'
+# Error tracking service for Ruby
+gem 'rollbar'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
